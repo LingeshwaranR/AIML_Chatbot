@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_story"
+        android:icon="@drawable/icons8_e_learning_filled"
+        android:title="StoryBoard" />
+
+    <item
+        android:id="@+id/navigation_analysis"
+        android:icon="@drawable/icons8_bar_chart_and_polyline_filled"
+        android:title="Analysis" />
+
+    <item
+    android:id="@+id/navigation_marketplace"
+    android:icon="@drawable/icons8_food_basket_filled"
+    android:title="Marketplace" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/icons8_male_user_filled_50"
+        android:title="Profile" />
+    <item
+        android:id="@+id/navigation_aiVision"
+        android:icon="@drawable/icons8_aperture_filled"
+        android:title="AiVision" />
+
+</menu>
