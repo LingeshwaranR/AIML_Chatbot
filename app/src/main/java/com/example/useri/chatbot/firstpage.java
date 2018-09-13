@@ -7,15 +7,14 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 public class firstpage extends AppCompatActivity {
-
-    private TextView mTextMessage;
-    private ImageView chatbot;
-
-
+ TextView text;
+ ImageView img;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -23,37 +22,40 @@ public class firstpage extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
-            android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
+            android.support.v4.app.FragmentManager fragmetManager = getSupportFragmentManager();
+            android.support.v4.app.FragmentTransaction transaction = fragmetManager.beginTransaction();
             switch (item.getItemId()) {
-
-
                 case R.id.navigation_story:
-                    mTextMessage.setText("Storyboard");
                     transaction.replace(R.id.frame,new storyBoardFragment()).commit();
+                    text.setText("Storyboard");
 
                     return true;
+
                 case R.id.navigation_analysis:
-                    mTextMessage.setText("Analysis");
                     transaction.replace(R.id.frame,new analysisFragment()).commit();
+                    text.setText("Analysis");
 
                     return true;
                 case R.id.navigation_marketplace:
-                    mTextMessage.setText("Marketplace");
+
                     transaction.replace(R.id.frame,new marketplaceFragment()).commit();
+                    text.setText("Marketplace");
 
                     return true;
+
                 case R.id.navigation_profile:
-                    mTextMessage.setText("Profile");
+
                     transaction.replace(R.id.frame,new priceFragment()).commit();
+                    text.setText("Profile");
 
                     return true;
+
                 case R.id.navigation_aiVision:
-                    mTextMessage.setText("AiVison");
+
                     transaction.replace(R.id.frame,new aiVisionragment()).commit();
+                    text.setText("AI Vision");
 
                     return true;
-
             }
             return false;
         }
@@ -63,25 +65,24 @@ public class firstpage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstpage);
-       final Intent i = new Intent(this, MainActivity.class);
+        text=findViewById(R.id.message);
+        img=findViewById(R.id.chat);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(firstpage.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        chatbot=findViewById(R.id.chat);
         android.support.v4.app.FragmentManager fragmetManager = getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction transaction = fragmetManager.beginTransaction();
         transaction.replace(R.id.frame,new storyBoardFragment()).commit();
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         BottomNavigationViewHelper.removeShiftMode(navigation);
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        chatbot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(i);
-            }
-        });
     }
 
 }
