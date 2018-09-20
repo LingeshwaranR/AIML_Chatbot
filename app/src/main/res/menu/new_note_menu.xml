@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/save_note"
         android:icon="@drawable/ic_launcher_background"
-        android:title="Save" />
+        android:title="Farmbook"
+        android:visible="false" />
 </menu>

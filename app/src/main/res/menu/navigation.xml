@@ -3,25 +3,26 @@
 
     <item
         android:id="@+id/navigation_story"
-        android:icon="@drawable/icons8_e_learning_filled"
-        android:title="StoryBoard" />
+        android:icon="@drawable/icons8_carrot_480"
+        android:title="Vegetables" />
 
     <item
         android:id="@+id/navigation_analysis"
-        android:icon="@drawable/icons8_bar_chart_and_polyline_filled"
-        android:title="Analysis" />
+        android:icon="@drawable/icons8_apple_480"
+        android:title="Fruits" />
+
+    <item
+        android:id="@+id/navigation_aiVision"
+        android:icon="@drawable/icons8_lettuce_480"
+        android:title="Leaves" />
 
     <item
     android:id="@+id/navigation_marketplace"
-    android:icon="@drawable/icons8_food_basket_filled"
-    android:title="Marketplace" />
+    android:icon="@drawable/icons8_milkbottle_480"
+    android:title="Milk Products" />
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/icons8_male_user_filled_50"
-        android:title="Profile" />
-    <item
-        android:id="@+id/navigation_aiVision"
-        android:icon="@drawable/icons8_aperture_filled"
-        android:title="AiVision" />
+        android:icon="@drawable/icons8_ingredients_480"
+        android:title="Combos" />
 
 </menu>

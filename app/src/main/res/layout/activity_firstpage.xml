@@ -1,85 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".firstpage"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/graylight"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="47dp">
+    tools:context=".firstpage"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="47dp">
 
-    <RelativeLayout
-        android:id="@+id/toolbar_top"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:background="@color/green"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/message"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:text="@string/title_home"
-            android:textColor="#fff"
-            android:textSize="19sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="177dp" />
-
-        <ImageView
-            android:id="@+id/chat"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="17dp"
-            android:src="@drawable/icons8_facebook_messenger_filled_50"
-            android:tint="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/toolbar_top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:background="@color/green"-->
+    <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
 
 
-    </RelativeLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/message"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/title_home"-->
+    <!--android:textColor="#fff"-->
+    <!--android:textSize="19sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--tools:layout_editor_absoluteX="177dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/chat"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginEnd="17dp"-->
+    <!--android:src="@drawable/icons8_facebook_messenger_filled_50"-->
+    <!--android:tint="#fff"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--</RelativeLayout>-->
 
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="636dp"
+        android:layout_marginTop="82dp"
         android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/frame"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_top"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/navigation" />
 
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="652dp"
+        android:layout_height="604dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navigation"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/navigation">
+
 
     </FrameLayout>
-    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
 
