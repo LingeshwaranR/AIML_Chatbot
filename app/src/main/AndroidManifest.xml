@@ -16,6 +16,8 @@
         <activity android:name=".Login"></activity>
         <activity android:name=".Signin" />
         <activity android:name=".resetpassword" />
+        <activity android:name=".Book_Activity" />
+
         <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
