@@ -60,6 +60,11 @@ dependencies {
 
     implementation 'com.android.support:mediarouter-v7:27.1.1'
 
+    implementation 'com.asksira.android:loopingviewpager:1.1.2'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.0'
+
+
+
     implementation 'com.github.bumptech.glide:glide:4.4.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
 }
